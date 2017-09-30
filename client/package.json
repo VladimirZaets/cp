@@ -1,0 +1,38 @@
+{
+  "name": "courses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "history": "^4.7.2",
+    "material-ui-icons": "^1.0.0-beta.10",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "react-hot-loader": "^1.3.1",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "babel-node ./node_modules/webpack-dev-server/bin/webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "proxy": "http://localhost:1337"
+}

@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+import config from '../config';
+import app from '../app';
+import logger from '../libs/logger';
+
+const log = logger(module);
+
+app.set('port', process.env.PORT || config.server.port || 3000);
+
+app.listen(app.get('port'), () => {
+    log.info(`Server started on port ${ app.get('port') }`);
+});
