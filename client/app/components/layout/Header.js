@@ -15,6 +15,10 @@ const Links = [
     {
         name:'Courses',
         path:'/courses'
+    },
+    {
+        name:'Groups',
+        path:'/groups'
     }
 ];
 
