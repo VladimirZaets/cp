@@ -13,5 +13,7 @@ export default (
         <Route exact path='/courses/:id' component={CoursesViewPage}/>
         <Route exact path='/courses' component={CoursesListPage}/>
         <Route exact path='/groups' component={GroupsListPage}/>
+        <Route exact path='/groups/create' component={GroupsCreatePage}/>
+        <Route exact path='/groups/:id' component={GroupsEditPage}/>
     </Switch>
 )
