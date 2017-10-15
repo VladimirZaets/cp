@@ -5,6 +5,8 @@ import CoursesListPage from './components/pages/courses/CoursesListPage';
 import CoursesViewPage from './components/pages/courses/CoursesViewPage';
 import CourseCreatePage from './components/pages/courses/CoursesCreatePage';
 import GroupsListPage from './components/pages/groups/GroupsListPage';
+import GroupsCreatePage from './components/pages/groups/GroupsCreatePage';
+import GroupsEditPage from './components/pages/groups/GroupsEditPage';
 
 export default (
     <Switch>
