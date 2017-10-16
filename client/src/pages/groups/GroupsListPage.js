@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 // import GroupsPreviewItem from './CoursesPreviewItem';
-import { loadGroups } from '../../../actions/groupActions';
+import { loadGroups } from '../../actions/groupActions';
 import { Link } from 'react-router-dom';
 
 import { GroupsListPageStyle } from './GroupsStyles';

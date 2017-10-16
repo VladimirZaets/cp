@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { createGroup } from '../../../../actions/groupActions';
+import { createGroup } from '../../../actions/groupActions';
 
 import Button from 'material-ui/Button';
 
