@@ -46,11 +46,6 @@ class CourseApi {
 
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-<<<<<<< HEAD:client/app/api/mockCoursesAPI.js
-                console.log('course save');
-                // Simulate server-side validation
-=======
->>>>>>> 9e5b528:client/src/api/mockCoursesAPI.js
                 const minCourseTitleLength = 1;
                 if (course.title.length < minCourseTitleLength) {
                     reject(`Title must be at least ${minCourseTitleLength} characters.`);

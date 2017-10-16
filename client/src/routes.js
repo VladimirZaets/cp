@@ -5,7 +5,7 @@ import CoursesListPage from './pages/courses/list/CoursesListPage';
 import CoursesViewPage from './pages/courses/view/CoursesViewPage';
 import CourseCreatePage from './pages/courses/create/CoursesCreatePage';
 import GroupsListPage from './pages/groups/GroupsListPage';
-import GroupsCreatePage from './pages/groups/GroupsCreatePage/index';
+import GroupsCreatePage from './pages/groups/GroupsCreatePage';
 import GroupsEditPage from './pages/groups/GroupsEditPage';
 
 export default (

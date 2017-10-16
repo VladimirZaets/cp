@@ -1,12 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-// import GroupsPreviewItem from './CoursesPreviewItem';
-import { loadGroups } from '../../actions/groupActions';
 import { Link } from 'react-router-dom';
-
-import { GroupsListPageStyle } from './GroupsStyles';
+import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
-import Button from 'material-ui/Button';
+import Button from '../../common/buttons/Button';
+import { loadGroups } from '../../actions/groupActions';
+import { GroupsListPageStyle } from './GroupsStyles';
 
 class GroupsListPage extends React.Component {
     componentDidMount() {
@@ -23,12 +22,19 @@ class GroupsListPage extends React.Component {
                 </div>
 
                 <div className={this.props.classes.list}>
-                    {this.props.groups.map((group, i) => <GroupsPreviewItem key={i} group={group} />)}
+                    {this.props.groups.map((group) => <div key={group.name} group={group} />)}
                 </div>
             </div>
         )
     }
 }
+
+GroupsListPage.propTypes = {
+    loadGroups: PropTypes.func.isRequired,
+    classes: PropTypes.objectOf(PropTypes.string.isRequired).isRequired,
+    groups: PropTypes.arrayOf(PropTypes.shape({
+        name: PropTypes.string.isRequired
+    })).isRequired};
 
 function mapStateToProps(state) {
     return {

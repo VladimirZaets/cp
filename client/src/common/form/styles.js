@@ -15,3 +15,5 @@ export const styles = (theme) => ({
         color: '#3A312E'
     }
 });
+
+export const formStyles = {};

@@ -20,10 +20,10 @@ export function loadGroups() {
 export function createGroup(group) {
     return dispatch => 
         api.createGroup(group)
-            .then(group => 
+            .then(result =>
                 dispatch({
                     type: CREATE_GROUP_SUCCESS,
-                    group
+                    result
                 })
             ).catch(error => {
                 throw error;

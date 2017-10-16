@@ -1,4 +1,3 @@
-//todo
 const getAllGroups = () => Promise.resolve([]);
 const createGroup = group => Promise.resolve(group);
 

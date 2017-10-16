@@ -1,18 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { createGroup } from '../../../actions/groupActions';
-
-import Button from 'material-ui/Button';
-
 import { withStyles } from 'material-ui/styles';
+import PropTypes from 'prop-types';
+import { createGroup } from '../../../actions/groupActions';
+import Button from '../../../common/buttons/Button';
 import { styles } from '../../../common/form/styles';
+import TextField from '../../../common/fields/TextField';
 
-import TextField from 'material-ui/TextField';
 
 class GroupsCreatePage extends React.Component {
     handleCreateGroup() {
         const group = {};
-        //get form data
         this.props.createGroup(group);
     }
     
@@ -38,14 +36,14 @@ class GroupsCreatePage extends React.Component {
                            className={classes.textField}
                            labelClassName={classes.label}
                            margin="normal"
-                           autoFocus={true}
-                           required={true}
+                           autoFocus
+                           required
                            name="title" />
                 <TextField label="Start date"
                            className={classes.textField}
                            labelClassName={classes.label}
                            margin="normal"
-                           required={true}
+                           required
                            name="start"
                            type="date"
                            defaultValue="2018-04-27" />
@@ -54,5 +52,10 @@ class GroupsCreatePage extends React.Component {
         );
     }
 }
+
+GroupsCreatePage.propTypes = {
+    createGroup: PropTypes.func.isRequired,
+    classes: PropTypes.objectOf(PropTypes.string.isRequired).isRequired
+};
 
 export default connect(() => ({}), { createGroup })(withStyles(styles)(GroupsCreatePage));

@@ -10,3 +10,5 @@ export const GroupsListPageStyle = {
         textAlign: 'right'
     }
 };
+
+export const listStylePage = {};
