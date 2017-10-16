@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
-import Button from '../../common/buttons/Button';
-import { loadGroups } from '../../actions/groupActions';
-import { GroupsListPageStyle } from './GroupsStyles';
+import Button from '../../../common/buttons/Button';
+import { loadGroups } from '../../../actions/groupActions';
+import { GroupsListPageStyle } from '../GroupsStyles';
 
 class GroupsListPage extends React.Component {
     componentDidMount() {
