@@ -48,6 +48,7 @@ class CourseApi {
         course = Object.assign({}, course); // to avoid manipulating object passed in.
         return new Promise((resolve, reject) => {
             setTimeout(() => {
+                console.log('course save');
                 // Simulate server-side validation
                 const minCourseTitleLength = 1;
                 if (course.title.length < minCourseTitleLength) {

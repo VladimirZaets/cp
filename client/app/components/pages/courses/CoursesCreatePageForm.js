@@ -1,23 +1,8 @@
 import React from 'react';
 import TextField from 'material-ui/TextField';
 import { withStyles } from 'material-ui/styles';
+import { styles } from '../../common/form/styles';
 
-export const styles = (theme) => ({
-    container60: {
-        display: 'inline-block',
-        width: '60%',
-        textAlign: 'left'
-    },
-    textField: {
-        marginLeft: theme.spacing.unit,
-        marginRight: theme.spacing.unit,
-        width: '100%',
-    },
-    label: {
-        fontSize: 16,
-        color: '#3A312E'
-    }
-});
 
 const CoursesCreatePageForm = ({classes}) => {
     return (
