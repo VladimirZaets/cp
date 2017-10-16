@@ -7,7 +7,7 @@ export default {
     entry: [
         'webpack-dev-server/client?http://0.0.0.0:9000',
         'webpack/hot/only-dev-server',
-        path.join(__dirname, '/app/index.js')
+        path.join(__dirname, '/src/index.js')
     ],
     output: {
         path: '/',
@@ -18,7 +18,7 @@ export default {
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
         new HtmlWebpackPlugin({
-            template: './app/index.html',
+            template: './src/index.html',
             inject: true,
             filename: 'index.html'
         })
@@ -28,7 +28,7 @@ export default {
             {
                 test: /\.js?$/,
                 loaders: ['react-hot-loader','babel-loader'],
-                include: path.join(__dirname, 'app')
+                include: path.join(__dirname, 'src')
             }
         ]
     },

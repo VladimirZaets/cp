@@ -4,7 +4,7 @@
   "description": "",
   "main": "bin/www",
   "scripts": {
-    "server": "nodemon --watch ./ --exec babel-node -- bin/www",
+    "start": "nodemon --watch ./ --exec babel-node -- bin/www",
     "db:migrate": "knex migrate:latest --knexfile ./knexfile.js"
   },
   "author": "",
